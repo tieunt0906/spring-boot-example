@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<title>Demo</title>
+	<!-- CSS -->
+	<link th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+	
+	<!-- JS -->
+	<script th:src="@{/js/bootstrap.js}"></script>
+</head>
+<body>
+	<h1>Todo App</h1>
+	
+	<a th:href="@{/todos}" class="btn btn-primary">Xem danh sách</a>
+	<a th:href="@{/addTodo}" class="btn btn-success">+ Thêm công việc</a>
+</body>
+</html>

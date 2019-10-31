@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<title>Demo</title>
+	<!-- CSS -->
+	<link th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+	
+	<!-- JS -->
+	<script th:src="@{/js/bootstrap.js}"></script>
+</head>
+<body>
+	<h1 th:text="#{tieunt.hello}"></h1>
+	<h2>My Profile</h2>
+	
+	<ul>
+		<li th:each="info : ${tieuntProfile}">
+			<span th:text="*{info.key}"></span> : <span th:text="*{info.value}"></span>
+		</li>
+	</ul>
+</body>
+</html>
